@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.yassine.booksapp.activities.BookDetails"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:id="@+id/bd_image"
+        android:background="@drawable/image_background"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bd_title"
+        android:text="Book Title"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bd_image"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bd_category"
+        android:text="Sci-Fi"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bd_title"
+        android:textSize="17sp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/category_bg"
+        android:textColor="#000"
+        android:paddingHorizontal="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bd_description"
+        android:layout_below="@id/bd_category"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur cupiditate deserunt ducimus, enim explicabo facere, impedit iusto libero, necessitatibus nemo nostrum pariatur perspiciatis quae quidem rem sequi sit suscipit."
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="15dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+</RelativeLayout>
